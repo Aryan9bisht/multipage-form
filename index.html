@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="https://kit.fontawesome.com/a6f29df51c.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+    <title>Multi-step form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+
+<div class="container">
+  <div class="det">
+
+      <div class="one">
+     <div class="circle">1</div>
+        <div class="full1">
+          <div class="step1">Step 1</div>
+          <div class="info1">YOUR INFO</div>
+        </div>
+
+      </div>
+  
+
+
+
+      <div class="two">
+        
+        <div class="circle2">2</div>
+        <div class="full2">
+          <div class="step2">Step 2</div>
+          <div class="info2">SELECT PLAN</div>
+        </div>
+
+    </div>
+
+
+      <div class="three">
+        <div class="circle3">3</div>
+        <div class="full3">
+          <div class="step3">Step 3</div>
+          <div class="info3">ADD ONS</div>
+        </div>
+
+ 
+    </div>
+
+      <div class="four">
+        <div class="circle4">4</div>
+        <div class="full4">
+          <div class="step4">Step 4</div>
+          <div class="info4">SUMMARY</div>
+        </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <div class="formtag">
+    <div class="personal">Personal info</div>
+  <div class="info">
+    Please provide your name, email address, and phone number.
+  </div>
+ <form action="" id="form1">
+  <label for="name">Name</label>
+  <input type="text" name="name" id="nameIn" placeholder="e.g. Stephen King" required>
+  <label for="email">Email Address</label>
+  <input type="text" name="email" id="mail" placeholder="e.g. stephenking@lorem.com"required> 
+  <label for="phone">Phone Number</label>
+
+  <input type="text" name="phone" id="phonen" placeholder="  e.g. +1 234 567 890 " required> 
+  <button id="button1">Next Step</button>
+</form>
+  </div>
+  <div class="formtag2">
+
+    <div class="selectPlan">  Select your plan</div>
+    <div class="infoPlan">
+      You have the option of monthly or yearly billing.
+    </div>
+    <div class="billing">
+      <div class="arcade">
+      
+        <img src="./assets/images/icon-arcade.svg" alt="" class="arc">
+      <div class="name1">Arcade</div>
+        <div class="price1">$9/mo</div>
+        <div class="free"></div>
+      </div>
+      <div class="advanced">
+        <img src="./assets/images/icon-advanced.svg" alt="" class="adv">
+       <div class="name2">Advanced</div>
+        <div class="price2">$12/mo</div>
+        <div class="free"></div>
+       
+      </div>
+      <div class="pro">
+        <img src="./assets/images/icon-pro.svg" alt="" class="pr">
+        <div class="name3">Pro</div>
+        <div class="price3">$15/mo</div>
+
+        <div class="free"></div>
+      </div>
+    </div>
+    
+      <div class="forSwitch">
+        <div class="plans" id="months">
+          Monthly
+        </div>
+    
+        <div>
+          <input type="checkbox" name="checkbox" id="toggle" />
+          <label for="toggle" class="switch"></label>
+        </div>
+    
+        <div class="plans"id="years">
+          Yearly
+     
+      </div>
+    </div>
+    <div class="twobtn">
+      <div class="b1">Go Back</div>
+      <div ><button class="b2">Next Step</button></div>
+    </div>
+    </div>
+    <div class="formtag3">
+      <div class="add">  Pick add-ons </div>
+      <div class="addInfo">Add-ons help enhance your gaming experience. </div>
+      <div class="plans2">
+        <div class="plan1"><input type="checkbox" name="" id="checkbox1">
+        <div class="detplan1">
+      <div class="serv1">Online service</div>
+      <div class="about1">   Access to multiplayer games</div>
+      </div>
+      <div class="plan1price">   +$1/mo</div>
+    </div>
+
+    <div class="plan2"> <input type="checkbox" name="check1" id="checkbox2">
+    <div class="detplan2">
+  <div class="serv2">Larger storage</div>
+  <div class="about2">  Extra 1TB of cloud save</div>
+  </div>
+  <div class="plan2price">   +$2/mo</div>
+</div>
+<div class="plan3"><input type="checkbox" name="" id="checkbox3">
+<div class="detplan3">
+<div class="serv3">Customizable Profile</div>
+<div class="about3">Custom theme on your profile</div>
+</div>
+<div class="plan3price">  +$2/mo</div>
+</div>
+      </div>
+    
+  <div class="twobuttons">
+    <div class="go" id="go">Go Back</div>
+   <button id="nextStep">Next Step</button>
+  </div>
+        </div>
+<div class="formtag4">
+<div class="add1">Finishing Up</div>
+<div class="addInfo1">Double-check everything looks OK before confirming.</div>
+ <div class="final">
+  <div class="card1">
+    <div class="plan">
+      <div class="selected">Name</div>
+      <div class="change">Change</div>
+    </div>
+    <div class="price">$9/mo</div>
+  </div>
+  <hr style="opacity: 0.4;">
+  <div class="activeServices">
+    <div class="service1">
+      <div class="service1name">Online Service</div>
+      <div class="service1price">+1</div>
+    </div>
+    <div class="service2">
+      <div class="service2name">larger storage</div>
+      <div class="service2price">+2</div>
+    </div>
+    <div class="service3">
+      <div class="service3name">Customizable Profile</div>
+      <div class="service3price">+2</div>
+    </div>
+  </div>
+ </div>
+<div class="total">  <div class="total2">Total</div>
+<div class="priceTotal">$x/mo</div></div>
+   <div class="twoagain">
+    <div class="go2">
+Go Back
+    </div>
+    <button id="confirm1">Confirm</button>
+  
+   </div> 
+</div>
+<div class="finaltag">
+  <div class="img"><img src="./assets/images/icon-thank-you.svg" alt=""></div>
+  <div class="thanks">Thank you! </div>
+  <div class="finalinfo">Thanks for confirming your subscription! We hope you have fun
+    using our platform. If you ever need support, please feel free to email us
+    at support@loremgaming.com.</div>
+</div>
+    </div>
+  </div>
+</div>
+
+  <script src="./script.js"></script>
+    <!-- Sidebar start -->
+ <!--
+    Step 1 Your info Step 2  Step 3 Step 4 Summary-->
+
+    <!-- Sidebar end -->
+
+    <!-- Step 1 start -->
+ <!--
+    
+    Name e.g. Stephen King  e.g. stephenking@lorem.com Phone Number
+  Next Step
+-->
+    <!-- Step 1 end -->
+
+    <!-- Step 2 start
+
+    Select your plan You have the option of monthly or yearly billing. Arcade
+     Advanced $12/mo Pro $15/mo Monthly Yearly Go Back Next Step
+ -->
+    <!-- Step 2 end -->
+
+    <!-- Step 3 start 
+
+    Pick add-ons Add-ons help enhance your gaming experience. Online service
+    Access to multiplayer games +$1/mo Larger storage Extra 1TB of cloud save
+    +$2/mo Customizable Profile Custom theme on your profile +$2/mo Go Back Next
+    Step
+-->
+    <!-- Step 3 end -->
+
+    <!-- Step 4 start 
+
+    Finishing up Double-check everything looks OK before confirming.
+-->
+    <!-- Dynamically add subscription and add-on selections here 
+
+    Total (per month/year) Go Back Confirm
+-->
+    <!-- Step 4 end -->
+
+    <!-- Step 5 start 
+
+    Thank you! Thanks for confirming your subscription! We hope you have fun
+    using our platform. If you ever need support, please feel free to email us
+    at support@loremgaming.com.
+-->
+    <!-- Step 5 end -->
+  </body>
+</html>
